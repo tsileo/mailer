@@ -14,7 +14,7 @@ tpl := &mailer.Template{
 mailer.RegisterTemplate(tpl)
 
 // Create a `mailer.Mail` object
-m := mailer.New().Tpl("welcome", nil).To("thomas.sileo@gmail.com").
+m := mailer.New().Tpl("welcome", nil).To("thomas.sileo@gmail.com")
 // m.Payload() returns JSON if you want to send the payload in a message queue
 
 // Actually send the mail
