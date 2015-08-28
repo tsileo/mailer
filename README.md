@@ -2,7 +2,9 @@
 
 Send mail with golang via [AWS SES](https://aws.amazon.com/ses/).
 
-The package expect `AWS_ACCESS_KEY` and `AWS_SECRET_KEY` to be set.
+The package expect `AWS_ACCESS_KEY_ID` and `AWS_SECRET_KEY` to be set.
+
+Templates are parsed with `text/template`.
 
 ```go
 // First we register a template
